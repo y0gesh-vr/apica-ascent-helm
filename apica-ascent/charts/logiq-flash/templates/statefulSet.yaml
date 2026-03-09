@@ -141,6 +141,8 @@ spec:
           command:
           - /bin/bash
           env:
+          - name: TRACE_ENDPOINT
+            value: jaeger-collector.jaeger-monitoring.svc.cluster.local:4318
           - name: CONFIG_HASH
             value: {{ include "logiq-flash.confighash" . | quote }}
           - name: DISCOVERY_URL
