@@ -489,7 +489,7 @@ global:
     external_cert_key: ""
     internal_cert_crt: ""
     internal_cert_key: ""
-    extraflag: "-hauler-node-affinity=false --tail_longpoll=true -persist=true"
+    extraflag: "-hauler-node-affinity=false --tail_longpoll=true -persist=true -max_bytes_per_sec=1111108"
   persistence:
     storageClass: oci-bv
   chart:
